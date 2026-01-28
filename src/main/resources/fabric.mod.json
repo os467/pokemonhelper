@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "pokemonhelper",
+	"version": "${version}",
+	"name": "pokemonhelper",
+	"description": "This is a pokemon helper mod!",
+	"authors": [
+		"dyingend"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/pokemonhelper/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [],
+		"client": [
+
+			"com.os467.pokemonhelper.ThunderWeatherChecker",
+			"com.os467.pokemonhelper.tracker.PokemonTrackerMod",
+			"com.os467.pokemonhelper.VersionInfo",
+			"com.os467.pokemonhelper.PokemonShinyCheckerMod"
+		]
+	},
+	"mixins": [
+		"pokemonhelper.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
